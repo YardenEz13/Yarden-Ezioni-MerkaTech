@@ -1,0 +1,74 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  .radar-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,255,0,0.2), rgba(0,0,0,0.8));
+    border: 2px solid rgba(0,255,0,0.8);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+  }
+  
+  .radar-sweep {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(0, 255, 0, 0.5);
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+    animation: sweep 2s linear infinite;
+  }
+  
+  @keyframes sweep {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .radar-dots {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 255, 0, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 1);
+  }
+  
+  .dot1 {
+    transform: translate(-50%, -50%) rotate(30deg) translateX(130px);
+  }
+  
+  .dot2 {
+    transform: translate(-50%, -50%) rotate(90deg) translateX(100px);
+  }
+  
+  .dot3 {
+    transform: translate(-50%, -50%) rotate(150deg) translateX(90px);
+  }
+  
+  .dot4 {
+    transform: translate(-50%, -50%) rotate(210deg) translateX(110px);
+  }
+  
+  .dot5 {
+    transform: translate(-50%, -50%) rotate(270deg) translateX(120px);
+  }
+    
