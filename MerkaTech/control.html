@@ -19,8 +19,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="history.html">Camera History</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="radar.html">Radar Display</a>
+              
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="system.html">System Explanation</a>
@@ -32,8 +31,22 @@
       
   <div class="container text-center">
     <h1 class="mt-4">Tank Control</h1>
-    <div class="video-feed">
-      <video width="640" height="480" controls autoplay></video>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-6">
+        <div class="video-feed">
+          <video width="100%" height="auto" controls autoplay></video>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="radar-container">
+          <div class="radar-sweep"></div>
+          <div class="radar-dots dot1"></div>
+          <div class="radar-dots dot2"></div>
+          <div class="radar-dots dot3"></div>
+          <div class="radar-dots dot4"></div>
+          <div class="radar-dots dot5"></div>
+        </div>
+      </div>
     </div>
     <div class="d-flex justify-content-center my-4">
       <button class="btn btn-success mx-2">Up</button>

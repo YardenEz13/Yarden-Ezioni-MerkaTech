@@ -12,12 +12,13 @@ body {
   }
   .radar-container {
     position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 40px auto 0;
+    width: 100%;
+    padding-top: 100%;
+    margin: 10px auto;
     border-radius: 50%;
     background: #001a00;
     border: 2px solid #00ff00;
+    overflow: hidden;
   }
   
   .radar-sweep {
@@ -28,12 +29,12 @@ body {
     background: #00ff00;
     opacity: 0.3;
     clip-path: polygon(50% 50%, 100% 0, 100% 100%);
-    animation: spin 2s infinite;
+    animation: spin 5s linear infinite;
   }
   
   @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
   
   .radar-dots {
@@ -47,10 +48,10 @@ body {
   }
   
   .dot1 { transform: translate(-50%, -50%) rotate(45deg) translate(100px); }
-  .dot2 { transform: translate(-50%, -50%) rotate(90deg) translate(100px); }
-  .dot3 { transform: translate(-50%, -50%) rotate(135deg) translate(100px); }
-  .dot4 { transform: translate(-50%, -50%) rotate(180deg) translate(100px); }
-  .dot5 { transform: translate(-50%, -50%) rotate(225deg) translate(100px); }
+  .dot2 { transform: translate(-50%, -50%) rotate(90deg) translate(90px); }
+  .dot3 { transform: translate(-50%, -50%) rotate(135deg) translate(70px); }
+  .dot4 { transform: translate(-50%, -50%) rotate(180deg) translate(60px); }
+  .dot5 { transform: translate(-50%, -50%) rotate(225deg) translate(93px); }
   #tank-container {
     position: relative;
     width: 300px;
@@ -73,5 +74,14 @@ body {
 
   .control-buttons button {
     margin: 5px;
+  }
+
+  .video-feed, .radar-container {
+    margin: 10px;
+  }
+
+  .video-feed {
+    width: 100%;
+    height: auto;
   }
     
